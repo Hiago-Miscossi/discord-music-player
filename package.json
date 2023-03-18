@@ -1,0 +1,42 @@
+{
+  "name": "bot-discord",
+  "version": "1.0.0",
+  "description": "bot de estudos de programacao para discord",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "npx plop --plopfile generators/plopfile.js",
+    "dev": "npx tsx watch ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "lint": "npx eslint --fix"
+  },
+  "keywords": [
+    "bot-discord"
+  ],
+  "author": "Itor Isaias",
+  "license": "ISC",
+  "dependencies": {
+    "@discord-player/extractor": "^4.1.2",
+    "@discordjs/opus": "^0.9.0",
+    "@distube/ytdl-core": "^4.11.7",
+    "discord-player": "^6.1.1",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "opusscript": "^0.0.8",
+    "pino": "^8.11.0",
+    "play-dl": "^1.9.6",
+    "ytdl-core": "^4.11.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "pino-pretty": "^10.0.0",
+    "plop": "^3.1.2",
+    "tsx": "^3.12.5",
+    "typescript": "^5.0.2"
+  }
+}

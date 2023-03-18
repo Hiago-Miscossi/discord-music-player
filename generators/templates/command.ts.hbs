@@ -1,0 +1,14 @@
+export const {{pascalCase name}}Command: Command = {
+  name: "{{name}}",
+  description: "Descrever comando {{name}}",
+  run: async (interaction) => {
+    const content = "Hello i'm command {{name}}!";
+
+    await interaction.followUp({
+      ephemeral: true,
+      content,
+    });
+  },
+};
+
+export default {{pascalCase name}}Command;
